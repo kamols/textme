@@ -1,0 +1,241 @@
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1%;
+  width: 100vw;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.login-form {
+ /* background: #f4f1ef;
+  max-width: 300px;
+  width: 100%;
+  border: solid 2px #cecece;
+  border-radius: 10px;
+  padding: 50px 36px;
+  */
+text-align: center;
+
+}
+
+#donnie-svg {
+  max-width: 176px;
+  margin-top: 0px;
+  margin-left:-80px;
+  text-align: center;
+  position:absolute;
+}
+
+#email, #password, .login-btn, .create-account-btn {
+  width: 400px;
+  height: 40px;
+  border: solid 2px #cecece;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#emailInputWrapper i{
+  display: none;
+  font-size: 14px;
+  color: #90cd22;
+  margin-right: -20px;
+  padding-top: 12px;
+  margin-bottom: -28px;
+  position: relative;
+  float: right;
+  z-index: 9999;
+}
+
+#passInputWrapper.valid i{
+  display: inline-block;
+}
+
+#passInputWrapper > i{
+  display: none;
+  font-size: 14px;
+  color: #90cd22;
+  margin-right: 16px;
+  padding-top: 12px;
+  margin-bottom: -28px;
+  position: relative;
+  float: right;
+  z-index: 9999;
+}
+
+#passInputWrapper.valid .fa-exclamation-circle {
+  display: none;
+}
+
+#emailInputWrapper.valid i{
+  display: inline-block;
+}
+
+#passInputWrapper {
+  opacity: 0.4;
+  position: relative;
+}
+
+#passInputWrapper.emailIsValid {
+  opacity: 1;
+}
+
+#passInputWrapper.emailIsValid .pass-errors-wrapper.isActive{
+  opacity: 1;
+  transform: scale(1);
+  transition: 300ms ease-in;
+}
+
+.pass-errors-wrapper {
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 2px #cecece;
+  padding: 15px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  transform: scale(0);
+  transform-origin: 50% 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 99999;
+  box-sizing: border-box;
+  transition: 300ms;
+  top: 80px;
+}
+
+.pass-errors-wrapper h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.pass-errors-wrapper p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.pass-errors-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.pass-errors-wrapper i {
+  font-size: 10px;
+  margin-left: 5px;
+  color: #90cd22;
+  opacity: 0;
+  transition: 300ms;
+}
+
+#eightChar.valid, #oneLetter.valid, #oneNumber.valid {
+  text-decoration: line-through;
+}
+
+#eightChar.valid i, #oneLetter.valid i, #oneNumber.valid i {
+  opacity: 1;
+  display: inline-block;
+  float: none;
+}
+
+label {
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#passInputWrapper label i{
+  float: none;
+  display: inline-block;
+  color: #999!important;
+  margin-left: 5px;
+}
+
+#passInputWrapper label span {
+  cursor: pointer;
+}
+
+#passInputWrapper label span.hide .fa-eye-slash{
+  display: inline-block;
+}
+
+#passInputWrapper label span.hide .fa-eye{
+  display: none;
+}
+
+#passInputWrapper label span .fa-eye-slash{
+  display: none;
+}
+
+#submit-wrapper {
+  text-align: center;
+  color: #afa8a8;
+}
+
+#submit-wrapper a:not(.login-btn) {
+  color: #afa8a8;
+}
+
+.login-btn {
+  display: block;
+  background-color: #3cb9e6;
+  border-color: #3cb9e6;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#show-pass {
+  float: right;
+  margin-bottom: -35px;
+  z-index: 9999;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 16px;
+  opacity: 0.3;
+}
+
+#show-pass .fa-eye-slash {
+  display: none;
+}
+
+#show-pass.show .fa-eye-slash {
+  display: block;
+  font-size: 14px;
+}
+
+#show-pass.show .fa-eye {
+  display: none;
+}
+
+.create-account-wrapper {
+  padding-top: 10px;
+  margin-top: 30px;
+  border-top: solid 1px #cecece;
+  text-align: center;
+}
+
+.create-account-wrapper h3 {
+  font-weight: 400;
+}
+
+#submit-wrapper .login-btn {
+  pointer-events: none;
+  cursor: default;
+  background-color: #999;
+  border-color: #999;
+}
+
+#submit-wrapper.valid .login-btn {
+  pointer-events: auto;
+  cursor: pointer;
+  background-color: #3cb9e6;
+  border-color: #3cb9e6;
+}
